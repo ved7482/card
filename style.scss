@@ -57,6 +57,7 @@ html, body{
                 width: 265px;
                 border-radius: 50%;
                 object-fit: cover;
+                pointer-events: none;
                 -webkit-user-select: none;
                 -ms-user-select: none;
                 user-select: none;
