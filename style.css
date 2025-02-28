@@ -1,4 +1,16 @@
 /*JAI SHREE RAM*/
+@font-face {
+  font-family: gilroy;
+  src: url(assets/fonts/Gilroy-ExtraBold.ttf);
+}
+@font-face {
+  font-family: gilroyitalic;
+  src: url(assets/fonts/Gilroy-SemiBoldItalic.ttf);
+}
+@font-face {
+  font-family: juana;
+  src: url(assets/fonts/Fontspring-DEMO-juanaalt-regular.otf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -8,4 +20,105 @@
 html, body {
   height: 100%;
   width: 100%;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  height: 60vh;
+  width: 30vw;
+  border: 0.1rem solid lightpink;
+  border-radius: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 1rem 0.5rem rgb(173, 172, 172);
+}
+.card .card-content {
+  height: 100%;
+  width: 100%;
+}
+.card .card-content .image {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+.card .card-content .image img {
+  height: 265px;
+  width: 265px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+}
+.card .card-content h2 {
+  font-size: 2.7rem;
+  font-weight: 900;
+  text-transform: capitalize;
+  font-family: gilroy;
+  text-align: center;
+}
+.card .card-content h2::-moz-selection {
+  background-color: black;
+  color: yellow;
+}
+.card .card-content h2::selection {
+  background-color: black;
+  color: yellow;
+}
+.card .card-content p {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: gilroyitalic;
+  text-align: center;
+  padding: 0.1rem 0rem;
+  margin-bottom: 1.5rem;
+}
+.card .card-content p::-moz-selection {
+  background-color: black;
+  color: lightskyblue;
+}
+.card .card-content p::selection {
+  background-color: black;
+  color: lightskyblue;
+}
+.card .card-content .btm {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .card-content .btm button {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 0.5rem 1rem;
+  border: 0.1rem solid black;
+  border-radius: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: juana;
+  transition: all 0.3s ease;
+}
+.card .card-content .btm button:hover {
+  background-color: black;
+  color: white;
+}
+.card .card-content .btm button::-moz-selection {
+  background-color: black;
+  color: white;
+}
+.card .card-content .btm button::selection {
+  background-color: black;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
